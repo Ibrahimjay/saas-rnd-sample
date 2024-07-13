@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+<body >
+    <h1> Hello World </h1>
+    <p> This is {{ page_title }} </p>
+    <h1>{{request.user}}</h1>
+    <h1>{{request.method}}</h1>
+    <h1>{{request.user.is_authenticated}}</h1>
+    {% include "snippets/welcome_user_msg.html" %}
+</body>
+{% endblock body %}
