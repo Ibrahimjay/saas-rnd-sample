@@ -2,7 +2,7 @@
 
 
 {% block body %}
-<body >
+
     <h1> Hello World! </h1>
     <p> This is {{ page_title }} </p>
     <h1>{{request.user}}</h1>
@@ -12,5 +12,5 @@
     <p>percent: {{ percent }}</p>
     <p>Total visits: {{ total_visit_count }}</p>
     {% include "snippets/welcome_user_msg.html" %}
-</body>
+
 {% endblock body %}
